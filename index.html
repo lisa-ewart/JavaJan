@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mood Background</title>
+	<title>MoodPalette App</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script>
 	function generateRandomNumberFromRange(s,e) {
@@ -35,14 +35,24 @@
 	function changeBG2() {
     document.querySelector('.smalldiv').style.backgroundColor = colorGenerator();
 	}
+	function changeBG3() {
+    document.querySelector('.smalldiv2').style.backgroundColor = colorGenerator();
+	}
+	function changeBG4() {
+    document.querySelector('.smalldiv3').style.backgroundColor = colorGenerator();
+	}
 
 </script>
 </head>
 <body>
 <div class = "maindiv">
-<h1>Set Your Mood</h1>
+<h1>Set Your Palette</h1>
 <button type="button" onclick="changeBG()">click for random customized bg color</button>
+<div class="clearfix">
 <div class="smalldiv" type="div" onmouseover="changeBG2()">mouse across bar for random customized bg color</div>
+<div class="smalldiv2" type="div" onmouseover="changeBG3()">mouse across bar for random customized bg color</div>
+<div class="smalldiv3" type="div" onmouseover="changeBG4()">mouse across bar for random customized bg color</div>
+</div>
 </div>
 
 </body>
