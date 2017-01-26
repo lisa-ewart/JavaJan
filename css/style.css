@@ -18,6 +18,11 @@
 	height:500px;
 
 }
+h2{
+	font-family:helvetica neue;
+	font-weight:lighter;
+	font-color:#666;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -27,37 +32,43 @@
 	margin-top:5px;
 	background-color:grey;
 	width:33.33%;
-	height:400px;
+	height:350px;
 	margin: 0 auto;
 	color:white;
 	font-family:helvetica neue;
 	font-weight:lighter;
 	float:left;
+	padding-top:50px;
 }
 .smalldiv2{
 	margin-top:5px;
 	background-color:grey;
 	width:33.33%;
-	height:400px;
+	height:350px;
 	margin: 0 auto;
 	color:white;
 	font-family:helvetica neue;
 	font-weight:lighter;
 	float:left;
+	padding-top:50px;
 }
 .smalldiv3{
 	margin-top:5px;
 	background-color:grey;
 	width:33.33%;
-	height:400px;
+	height:350px;
 	margin: 0 auto;
 	color:white;
 	font-family:helvetica neue;
 	font-weight:lighter;
 	float:left;
+	padding-top:50px;
 }
+
 button{
 	background-color:#ccc;
 	margin:20px;
 	outline:none;
+	font-size:1em;
+	font-weight:lighter;
 }
