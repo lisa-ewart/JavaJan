@@ -1,0 +1,16 @@
+
+.maindiv{
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.maindiv h1{
+	padding-top:10px;
+	background-color:white;
+	text-align:center;
+	font-family:helvetica neue;
+	font-weight:lighter;
+}
+button{
+	background-color:#ccc;
+}
