@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random background</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+	function generateRandomNumberFromRange(s,e) {
+	return s + Math.floor( Math.random() * (e-s+1) );
+	}
+	function generateRandomWithPadding( s, e ) {
+    const random = generateRandomNumberFromRange(s,e);
+	// if random is less than 10, it is 1, 2, 3, etc
+	// pad with two 00s
+	if (random < 10) {
+		return "00"+random;	
+	}
+	// if random is less than 100, it is 54, 98, etc
+	// pad with one 0
+	else if (random < 100) {
+		return "0"+random;	
+	}	
+	return random;
+	}
+	//generates RGB string
+	function colorGenerator(){
+    const first = generateRandomWithPadding(0,255);
+    const second = generateRandomWithPadding(0,255);
+    const third = generateRandomWithPadding(0,255);
+    return `RGB(${first},${second},${third})`
+	}
+	//change bg on click function
+	function changeBG() {
+    document.body.style.backgroundColor = colorGenerator();
+	}
+
+</script>
+</head>
+<body>
+<div class = "maindiv">
+<h1>Hello World!</h1>
+<button type="button" onclick="changeBG()">click for random bg color</button>
+</div>
+
+</body>
+</html>
