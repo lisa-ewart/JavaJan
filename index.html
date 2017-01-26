@@ -32,13 +32,17 @@
 	function changeBG() {
     document.body.style.backgroundColor = colorGenerator();
 	}
+	function changeBG2() {
+    document.body.style.backgroundColor = colorGenerator();
+	}
 
 </script>
 </head>
 <body>
 <div class = "maindiv">
 <h1>Hello World!</h1>
-<button type="button" onclick="changeBG()">click for random bg color</button>
+<button type="button" onclick="changeBG()">click for random customized bg color</button>
+<div class="smalldiv" type="div" onmouseover="changeBG2()">mouse across bar for random customized bg color</div>
 </div>
 
 </body>
